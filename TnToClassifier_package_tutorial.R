@@ -61,8 +61,8 @@ sample_data <- feature_manipulation(sample_data)    ## step 7
 sample_data1 <- sample_data %>% select(-c(SampleID, Protein.Variant,Gene.Symbol ,data_type))  ## step 8
 
 
-# make_prediction: use GBM model making prediction for variants. Positive class is FP variant.
-prediction <- make_prediction(sample_data1)    ## step 9
+# make_prediction: use GBM model making prediction for variants. Positive class is FP variant.Inputs are dataframe and path of package
+prediction <- make_prediction(sample_data1, "/home/x217659/clones/avelumab-001-personalis-TNvTO_xome/ml_Yang/FalseVariantClassifier")    ## step 9
 sample_data2 <- cbind(sample_data, prediction$predict)
 colnames(sample_data2)[ncol(sample_data2)] <- "prediction"
 

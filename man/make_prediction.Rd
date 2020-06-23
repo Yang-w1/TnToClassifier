@@ -4,10 +4,12 @@
 \alias{make_prediction}
 \title{Load a data frame}
 \usage{
-make_prediction(dataframe)
+make_prediction(dataframe, package_path)
 }
 \arguments{
 \item{dataframe}{TO output dataframe to be loaded}
+
+\item{package_path}{The path of TnToClassifier package you have downloaded.}
 }
 \value{
 A prediction dataframe.
