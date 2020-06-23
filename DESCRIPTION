@@ -1,0 +1,27 @@
+Package: TnToClassifier
+Type: Package
+Title: Predict FP in TO output
+Version: 0.1.0
+Author: Yang Wu and Parantu Shah
+Maintainer: Yang Wu <wu.yang2@husky.neu.edu>
+Description: The package uses GBM(gradient boosting machine) model to predict FP and TP in tumor only output. 
+    It contains feature manipulation and prediction making. 
+    This package also includes how to calculate triplet, triplet frequency and cosine similarities for each samples.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Depends: 
+    tidyverse,
+    BSgenome.Hsapiens.UCSC.hg19,
+    BSgenome,
+    stringr,
+    plyr,
+    readr,
+    caret,
+    scales,
+    MutationalPatterns,
+    tidyselect,
+    R (>= 2.10),
+    h2o,
+    reshape2
