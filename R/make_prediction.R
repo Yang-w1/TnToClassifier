@@ -7,7 +7,7 @@
 #' @export
 
 make_prediction <- function(dataframe, package_path){
-  h2o.init(max_mem_size = "8g", nthreads = -1)
+  h2o.init(max_mem_size = "8g", nthreads = -1, strict_version_check = FALSE)
   newdata <- as.h2o(dataframe)
   set.seed(123)
   model <- h2o.loadModel(paste0(package_path, "/data/","Grid_GBM_base_data1_sid_af67_1_model_R_1590467726503_19783_model_2"))
